@@ -1,0 +1,6 @@
+{
+  "name": "Хроноакадемия",
+  "description": "Образовательная RPG-платформа для школьников: квесты по предметам, пошаговые бои с боссами, PvP-дуэли, система достижений, кастомизация персонажей и кабинет учителя с ИИ-ассистентом.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
