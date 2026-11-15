@@ -8,7 +8,9 @@ export default defineConfig(() => {
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        // `import.meta.dirname` keeps this working with Vite's native config
+        // loader, where the CommonJS `__dirname` global is unavailable.
+        '@': path.resolve(import.meta.dirname, '.'),
       },
     },
     server: {
