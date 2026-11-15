@@ -1,0 +1,7 @@
+# hadolint configuration — https://github.com/hadolint/hadolint
+#
+# Run with:  hadolint Dockerfile
+ignored:
+  # DL3066: "USER bun" uses a named user rather than a numeric id. The user is
+  # provided by the `oven/bun` base image, so this is intentional.
+  - DL3066
